@@ -1,0 +1,29 @@
+{
+  "name": "basic-express-server",
+  "version": "1.0.0",
+  "description": "basic-express-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mujahedyousef/basic-express-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mujahedyousef/basic-express-server/issues"
+  },
+  "homepage": "https://github.com/Mujahedyousef/basic-express-server#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}
