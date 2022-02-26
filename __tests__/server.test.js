@@ -10,19 +10,21 @@ describe('testing API server', () => {
         expect(response.status).toEqual(200)
     })
 
-    it('testing /person with params', async () => {
-        const response = await request.get('/person?name=name');
-        expect(typeof response).toEqual('object')
-        expect(response.status).toEqual(200)
-    })
-
-    it('testing /person without params', async () => {
+    it('testing /person without query', async () => {
         const response = await request.get('/person');
         expect(response.status).toEqual(500)
     })
 
+    it('testing /person with query', async () => {
+        const response = await request.get('/person?name=mujahed');
+        expect(typeof response).toEqual('object')
+        expect(response.status).toEqual(200)
+    })
+
+
+
     it('testing req path not found', async () => {
-        const response = await request.get('/notfound');
+        const response = await request.get('/NotFound');
         expect(response.status).toEqual(404)
     })
 })
