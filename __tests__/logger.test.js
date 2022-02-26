@@ -17,11 +17,11 @@ describe('test logger middleware', () => {
     })
 
     it('tests log', () => {
-        logger(req,res,next)
+        logger(req, res, next)
         expect(consoleSpy).toHaveBeenCalled();
     })
     it('tests next function', () => {
-        logger(req,res,next)
+        logger(req, res, next)
         expect(next).toHaveBeenCalled();
     })
 })
